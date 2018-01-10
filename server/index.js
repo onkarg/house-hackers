@@ -21,6 +21,14 @@ app.use( passport.initialize() );
 app.use( passport.session() );
 passport.use( strategy );
 
+passport.serializeUser(function(user, done) {
+  done(null, { id: user.id, display: user.displayName, nickname: user.nickname, email: user.emails[0].value });
+});
+
+passport.deserializeUser(function(obj, done) {
+  done(null, obj);
+});
+
 app.use( bodyParser.json() );
 
 massive( process.env.CONNECTION_STRING ).then( db => {
