@@ -16,7 +16,6 @@ An app to allow users to sign up and allow them to create properties with detail
 - `Auth0` for authentication
 - `Nodejs` back functionality
 - `PostgreSQL` for data using `Massive`
-- `HTML & CSS` Web layout and design
 
 #
 
