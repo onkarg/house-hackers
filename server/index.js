@@ -1,6 +1,9 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const massive = require('massive');
+const session = require('express-session');
+const passport = require('passport');
+const strategy = require('../strategy');
 const port = process.env.PORT || 3000;
 
 require('dotenv').config();
@@ -8,6 +11,15 @@ require('dotenv').config();
 const ctrl = require('./controller/house_controller');
 
 const app = express();
+
+app.use( session({
+  secret: 'anything',
+  resave: false,
+  saveUninitialized: false
+}));
+app.use( passport.initialize() );
+app.use( passport.session() );
+passport.use( strategy );
 
 app.use( bodyParser.json() );
 
