@@ -13,7 +13,7 @@ An app to allow users to sign up and allow them to create properties with detail
 
 ### Tech:
 - `Reactjs` front-end functionality
-- `Auth0` for authentication
+- `Auth0` for authentication using `Passport`
 - `Nodejs` back functionality
 - `PostgreSQL` for data using `Massive`
 
