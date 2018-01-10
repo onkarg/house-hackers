@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const massive = require('massive');
 const session = require('express-session');
 const passport = require('passport');
-const strategy = require('../strategy');
+const strategy = require('./strategy');
 const port = process.env.PORT || 3000;
 
 require('dotenv').config();
