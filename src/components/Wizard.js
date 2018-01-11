@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-class Garlicnaan extends Component {
+class Wizard extends Component {
     render() {
         return (
             <div>
-                Garlicnaan!!!!!
+                Wizard Component
             </div>
         );
     }
 }
 
-export default Garlicnaan;
+export default Wizard;
