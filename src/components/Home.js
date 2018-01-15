@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import Navbar from './Navbar'
 
-class Login extends Component {
+class Home extends Component {
   render() {
     return (
       <div>
         <Navbar />
         <div className="container">
-          <h2>Login Component</h2>
+          <h2>Home Component</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec justo
             ac nisl pharetra feugiat sed quis felis. Nullam et turpis et libero
@@ -43,4 +43,4 @@ class Login extends Component {
   }
 }
 
-export default Login;
+export default Home;
