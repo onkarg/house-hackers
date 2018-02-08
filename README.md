@@ -1,15 +1,15 @@
 #
-### Houser: 
+### {HH} House-Hackers: 
 A project to build out a full-stack app using React, Node, & Auth0.
 
 ### Details:
 
-An app to allow users to sign up and allow them to create properties with details of a house to put up for rent.
+An app to allow users to sign up and allow them to create properties with details of a house to put up for rent, eventually to have total income from different properties with an admin view.
 
 #
 
 ### Completion:
-30%
+70%
 
 ### Tech:
 - `Reactjs` front-end functionality
@@ -19,9 +19,6 @@ An app to allow users to sign up and allow them to create properties with detail
 
 #
 
-### REQUIREMENTS: 
-
-Update coming shortly
 
 ### Data Structure from the API
 ```js

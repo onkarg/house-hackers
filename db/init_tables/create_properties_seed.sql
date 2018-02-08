@@ -1,6 +1,6 @@
-DROP TABLE IF EXISTS houses CASCADE;
+DROP TABLE IF EXISTS properties CASCADE;
 
-CREATE TABLE IF NOT EXISTS houses (
+CREATE TABLE IF NOT EXISTS properties (
   id SERIAL PRIMARY KEY,
   name varchar(120),
   description varchar(500),
@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS houses (
   owner_id int REFERENCES users(id)
 );
 
-INSERT INTO houses (name, description, address, city, state, zip, img_url, loan, mortgage, rent, owner_id)
+INSERT INTO properties (name, description, address, city, state, zip, img_url, loan, mortgage, rent, owner_id)
 VALUES
 ('Family House', 'Amazing house on the river', '123 Villa Dr', 'Bobville', 'BA', 12345, 'https://cdn.houseplans.com/product/o2d2ui14afb1sov3cnslpummre/w1024.jpg?v=15', 255000, 1500, 2000, 1),
 ('Bum House', 'Not amazing house on the river', '987 Bum Dr', 'Boringville', 'BV', 98765, 'https://zachselwyn.files.wordpress.com/2015/01/run-down-house.jpg', 40000, 300, 500, 2),

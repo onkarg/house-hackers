@@ -10,5 +10,6 @@ export default (
         <Route exact path="/" component={Home} />
         <Route path="/dashboard" component={Dashboard} />
         <Route path="/wizard" component={Wizard} />
+        <Route path="/login" component={Login} />
     </Switch>
 )
